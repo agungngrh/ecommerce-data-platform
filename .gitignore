@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow-webserver.pid
+
+# Data Sandbox (Sangat penting agar data giga-byte tidak masuk Git)
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+data/archive/*
+data/temp/*
+!data/**/.gitkeep
+
+# Logs
+logs/
+*.log
